@@ -1,107 +1,156 @@
+/* -----------------------------
+   Base Styles
+----------------------------- */
 body {
-    background-color: #23bb3f;
+    font-family: 'Lato', 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
+/* -----------------------------
+   Typography
+----------------------------- */
 .brand {
-    font-family: Lato, Verdana;
-    font-size: 2rem;
-    font-weight: 60000;
-    color:  #ffffff;
-}
-
-.btn-primary {
-    color: #fff;
-}
-
-
-.light-bg {
-    background-color: rgb(21, 199, 45);
-}
-
-.dark-bg {
-    background-color: rgb(255, 255, 255)
-
-}
-
-.main-bg {
-    background-color:  #23bb3f;
-}
-
-.card-body {
-    border: 2px;
-    background-color: transparent;
-}
-
-.card-title {
-    color: black;
-}
-
-.card-text {
-    color: black;
-}
-
-.image-container {
-    position: relative;
-}
-
-.author {
-    color: white;
-    margin: 4px;
-    text-transform: uppercase;
-}
-
-
-.post-link {
-    text-decoration: none;
-    color: #445261;
-}
-
-.post-link:hover,
-.page-link {
+    font-family: 'Lato', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
     color: #156703;
 }
 
 .post-title {
-    color: #ffffff;
-    margin-top: 5%;
-    margin-left: 5%;
+    color: #156703;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
 }
 
 .post-subtitle {
-    margin-left: 5%;
-    color: lightgray;
+    color: #6c757d;
+    margin-left: 0.5rem;
+}
+
+/* -----------------------------
+   Navbar
+----------------------------- */
+.navbar {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.nav-link {
+    color: #156703 !important;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: #0a3f01 !important;
+}
+
+/* -----------------------------
+   Buttons
+----------------------------- */
+.btn-primary {
+    background-color: #156703;
+    border: none;
+    color: #fff;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #0a3f01;
+    transform: scale(1.05);
 }
 
 .btn-signup {
-    background-color: #ffffff;
-    color: rgb(0, 255, 13);
-}
-
-.btn-signup:hover,
-.btn-signup:active {
     background-color: #fff;
     color: #156703;
-
+    border: 2px solid #156703;
+    transition: all 0.2s;
 }
 
-.link {
+.btn-signup:hover {
+    background-color: #156703;
+    color: #fff;
+}
+
+/* -----------------------------
+   Cards
+----------------------------- */
+.card {
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.card-title {
+    color: #156703;
+}
+
+.card-text {
+    color: #555;
+}
+
+/* -----------------------------
+   Footer
+----------------------------- */
+.footer {
+    background-color: #156703;
+    color: #fff;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* -----------------------------
+   Forms
+----------------------------- */
+.comment-form,
+#newsletter-form {
+    max-width: 540px;
+    margin: 1rem auto;
+}
+
+/* -----------------------------
+   Links
+----------------------------- */
+a {
     color: #156703;
     text-decoration: none;
-
+    transition: color 0.2s;
 }
 
-.link:hover,
-.link:active {
-    color: #000;
-    text-decoration: none;
+a:hover,
+a:active {
+    color: #0a3f01;
+    text-decoration: underline;
 }
 
-.comment-form {
-    max-width: 540px;
+/* -----------------------------
+   Utility Classes
+----------------------------- */
+.main-bg {
+    background-color: #e8f5e9;
 }
 
-.footer {
-    position: fixed;
-    Width: 100%;
-    bottom: 0;
+.light-bg {
+    background-color: #ffffff;
+}
+
+.dark-bg {
+    background-color: #156703;
+    color: #fff;
+}
+
+.author {
+    color: #156703;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0.5rem 0;
 }
